@@ -1,16 +1,13 @@
 package com.ninjamindgames.android.jedidroidzcomix;
 
 import android.content.ContentValues;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
 import com.ninjamindgames.android.jedidroidzcomix.data.ComiContract.TitleEntry;
@@ -30,7 +27,6 @@ public class CatalogActivity extends AppCompatActivity {
         // context, which is the current activity.
         mComixDbHelper = new ComixDbHelper(this);
 
-
         displayDatabaseInfo();
     }
 
@@ -47,14 +43,14 @@ public class CatalogActivity extends AppCompatActivity {
         //Gets database into the write mode
         SQLiteDatabase database = mComixDbHelper.getWritableDatabase();
 
-        //Create a ContentValues object where column names are the keys, and misc schwag's item
+        //Create a ContentValues object where column names are the keys, and misc schwag item's
         //attributes are it's values.
         ContentValues values = new ContentValues();
         values.put(TitleEntry.COLUMN_PRODUCT_NAME, "DroidPool #1");
         values.put(TitleEntry.COLUMN_SUPPLIER, "Udacious Ink.");
         values.put(TitleEntry.COLUMN_SUPPLIER_PH, 8675309);
         values.put(TitleEntry.COLUMN_PRICE, 599);
-        values.put(TitleEntry.COLUMN_QTY, 3);
+        values.put(TitleEntry.COLUMN_QTY, 42);
         values.put(TitleEntry.COLUMN_SECTION, 1);
 
         /**

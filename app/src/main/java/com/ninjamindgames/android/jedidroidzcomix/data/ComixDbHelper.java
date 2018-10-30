@@ -18,11 +18,11 @@ import com.ninjamindgames.android.jedidroidzcomix.data.ComiContract.TitleEntry;
         private static final String SQL_DELETE_ENTRIES=
                 "DROP TABLE IF EXISTS " + TitleEntry.TABLE_NAME;
         /** input_TYPE strings for SQL Statement */
-        private static final String TEXT_TYPE = " TEXT";
-        private static final String INT_TYPE = " INTEGER";
-        private static final String REAL_TYPE = " REAL";
+        private static final String TEXT_TYPE=" TEXT";
+        private static final String INT_TYPE=" INTEGER";
+        private static final String REAL_TYPE=" REAL";
         /** Primary Key AutoIncrement String w/ comma separator for SQL statement */
-        private static final String PRI_KEY_AUTOINCR = " PRIMARY KEY AUTOINCREMENT, ";
+        private static final String PRI_KEY_AUTOINCR=" PRIMARY KEY AUTOINCREMENT, ";
 
         /**
          *  Constructs a new instance of {@link ComixDbHelper}
