@@ -11,9 +11,9 @@ import com.ninjamindgames.android.jedidroidzcomix.data.ComiContract.TitleEntry;
 
         public static final String LOG_TAG = ComixDbHelper.class.getSimpleName();
         /** Name of the Database file */
-        private static final String DATABASE_NAME = "items.db";
+        private static final String DATABASE_NAME="items.db";
         /** Database version. If schema is changed DB version must be incremented */
-        private static final int DATABASE_VERSION = 1;
+        private static final int DATABASE_VERSION=1;
         /** Drop Existing Table String */
         private static final String SQL_DELETE_ENTRIES=
                 "DROP TABLE IF EXISTS " + TitleEntry.TABLE_NAME;
