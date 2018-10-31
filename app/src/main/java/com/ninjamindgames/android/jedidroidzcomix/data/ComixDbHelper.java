@@ -9,18 +9,24 @@ import com.ninjamindgames.android.jedidroidzcomix.data.ComiContract.TitleEntry;
 
     public class ComixDbHelper extends SQLiteOpenHelper {
 
+        /**Log Tag (Activity) for logging purposes*/
         public static final String LOG_TAG = ComixDbHelper.class.getSimpleName();
+
         /** Name of the Database file */
         private static final String DATABASE_NAME="items.db";
+
         /** Database version. If schema is changed DB version must be incremented */
         private static final int DATABASE_VERSION=1;
+
         /** Drop Existing Table String */
         private static final String SQL_DELETE_ENTRIES=
                 "DROP TABLE IF EXISTS " + TitleEntry.TABLE_NAME;
+
         /** input_TYPE strings for SQL Statement */
         private static final String TEXT_TYPE=" TEXT";
         private static final String INT_TYPE=" INTEGER";
         private static final String REAL_TYPE=" REAL";
+
         /** Primary Key AutoIncrement String w/ comma separator for SQL statement */
         private static final String PRI_KEY_AUTOINCR=" PRIMARY KEY AUTOINCREMENT, ";
 

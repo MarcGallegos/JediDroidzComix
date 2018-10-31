@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DroidPool_Comix</string>
+    <string name="app_name">.this(DEVz_COMix)</string>
     <string name="category_overview">Edit Product Overview</string>
     //Menu Strings for menus
     <string name="action_insert_dummy_data">Insert Dummy Data</string>

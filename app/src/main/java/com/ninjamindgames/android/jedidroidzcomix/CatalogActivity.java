@@ -49,12 +49,12 @@ public class CatalogActivity extends AppCompatActivity {
         values.put(TitleEntry.COLUMN_PRODUCT_NAME, "DroidPool #1");
         values.put(TitleEntry.COLUMN_SUPPLIER, "Udacious Ink.");
         values.put(TitleEntry.COLUMN_SUPPLIER_PH, 8675309);
-        values.put(TitleEntry.COLUMN_PRICE, 599);
+        values.put(TitleEntry.COLUMN_PRICE, 5);
         values.put(TitleEntry.COLUMN_QTY, 42);
         values.put(TitleEntry.COLUMN_SECTION, 1);
 
         /**
-         * Insert new row for Superman #1 in the database, returning the id of that new row.
+         * Insert new row for DroidPool #1 in the database, returning the id of that new row.
          * The first arg for {@link db.insert()} is the items table name.
          * The 2nd arg provides the column name in which the framework can insert NULL in the
          * event the ContentView is empty. (If this is set NULL, the framework will not insert
